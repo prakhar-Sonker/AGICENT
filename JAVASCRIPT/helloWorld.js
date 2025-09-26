@@ -9,12 +9,13 @@
 
 //js me datatype phle define nhi krte hai
 
-//redefinition
+//redefinition && console.log(a,b)
 a=1
 b=2
 c=3
 console.log(a,b,c)
 console.log("hello","my","name","is","prakhar")
 age =24
-console.log("My age is "+age)
+console.log("My age is "+age) //better practice
+or
 console.log("My age is",age)

@@ -8,10 +8,10 @@
 a=5
 b='5'
 //this will give o/p true bcz wo uska type nhi check kr rha hai sirf wo value dekh rha hai --> to solve this problem triple === is there
-console.log(a==b)
+console.log(a==b) //o/p-->true
 
 // what is === tripleequalto 
 //now if we do a===b it will give false bcz ab wo uska type check krke value dega ki dono same hai ya nhi 
-console.log(a===b)
+console.log(a===b) //o/p--> false bcz integer ko string se compare kroge to false hi dega
 
 

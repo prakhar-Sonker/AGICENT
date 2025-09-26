@@ -1,0 +1,31 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body{
+  width: 100%;
+  height: 100%;
+}
+#car1{
+  width: 100px;
+  height: 120px;
+  background-color: aqua;
+}
+/* agr beech wli car uthi to space khaali hogi upr aur neeche wle car k beech me and then isko absolute bnate hi car3 iske place pr aajyegi aur car 2 upr uth jyegi*/
+#car2{
+  position: absolute;
+  /* jaise hi absolute bnaya ab y e poore box me khi bhi move kr skti hai top, left*/
+  /* chances of error bina position lgaye top left lagaoge nhi chlega */
+  left: 30%;
+  width: 110px;
+  height: 90px;
+  background-color: burlywood;
+}
+
+#car3{
+  width: 130px;
+  height: 110px;
+  background-color: firebrick;
+}
+

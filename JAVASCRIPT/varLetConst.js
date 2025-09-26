@@ -21,5 +21,5 @@
 //lets talk about const keyword so here is exception in const keyword this is not possible updation of values can't be done
 const a =10
 console.log(a)
-const a=0
-console.log(a) // this whole 
+// const a=0
+console.log(a) // this whole code will not run Identifier 'a' has already been declared this will show 

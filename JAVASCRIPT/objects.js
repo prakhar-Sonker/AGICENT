@@ -13,5 +13,13 @@ console.log(x);
 //agr sirf age ko print krnaa hai to . dot operator use krenge
 console.log(x.age);
 //if we have to print a object like console.log(x[age]) it is not possible so to sort this out we can make age a string and then print is value
-console.log(x[age]); // not possible
+console.log(x[age]); // not possible will throw error--> ReferenceError: age is not defined
 console.log(x['age']); // this is possible
+
+//if we want to update the value we have multiple ways
+//1st way
+x.age=30; 
+console.log(x);
+//2nd way
+x['age'] =40;
+console.log(x);

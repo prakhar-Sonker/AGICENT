@@ -1,6 +1,6 @@
 //for-of loop
-// this loop can be used to preint the array but can't be used to make changes in the array while printing arr means agr koi operation krenge for-of loop me to wo elements me to change krenge pr arr pe nhi visible hoga vo 
-//agr const use krenge to error dedega and let use krenge to same arr print hojyega without eroor
+// this loop can be used to print the array but can't be used to make changes in the array while printing arr means agr koi operation krenge for-of loop me to wo elements me to change krenge pr arr pe nhi visible hoga vo 
+//agr const use krenge to error dedega and let use krenge to same arr print hojyega without error
 //for-of loop me index print nhi kra skte
 
 arr=[1,2,3,4,5]
@@ -26,4 +26,6 @@ brr = [1,2,3,4,5]
 crr = [1,2,3,4,5]
 crr.forEach((ele, i, crr) => {
   console.log(ele,i, crr) //here ele is value and i is index
+  //ye loop bhi arr me changes nhi kr pyega same as for-of loop
+  ele*=2 //not possible
 });

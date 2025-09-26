@@ -1,0 +1,18 @@
+ *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body{
+  width: 100%;
+  height: 100%;
+}
+#main{
+  width: 100%;
+  height: 100%;
+  background-image: url(https://plus.unsplash.com/premium_photo-1727456894561-8100b7fd5249?q=80&w=1025&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  /* isse image poore area ko cover krne lgti hai aur kbhi bhar nhi nikalti scrren se */
+  background-size: cover;
+  /* isse aap img se kaunsa part dekhna chahte hai uspe focus krta hai age img jyada bdi ho to */
+  background-position: top;
+}

@@ -12,3 +12,11 @@ for(let i=1;i<=5;i++){
     console.log(i);
   }, i*5000);
 }
+
+//timer for random numbers to print till 10 seconds
+// let num = Math.ceil(Math.random()*10); //ye step phle glt kr re the
+for(let i=1;i<=10;i++){
+  setTimeout(function(){
+    console.log(Math.ceil(Math.random()*10));
+  },i*1000)
+}

@@ -4,6 +4,10 @@ let b =4
 console.log(a+b)
 console.log(a-b)
 console.log(a*b)
+
 console.log(a/b) // this give decimal o/p 
 // for getting integer op by dividing we will use inbuilt fxn math.floor
-console.log(Math.floor(a/b));
+console.log(Math.floor(a/b)); // this will give integer o/p
+
+//power nikalna ho 
+console.log(a**b) // this means a ki power b 2 star means power

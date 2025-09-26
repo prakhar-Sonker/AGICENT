@@ -24,10 +24,12 @@
 // }, 2000);
 
 //boiler plate to understand settimeout and how to write this
-// setTimeout(function(){
-  //yha jo likhoge wo chl jyega
+//
+setTimeout(function(){
+  // yha jo likhoge wo chl jyega
+  //iske andr 2 parameters hai
 
-// }, 5*1000) // mtlb ye 5 sec baad execute hoga
+}, 5*1000) // mtlb ye 5 sec baad execute hoga
 
 //new task-->  print the number from 1 to 10 with gap of every ith sec means 1 - 1 sec me print ho , 3- 3sec baad print ho aise 10 tk bascially 1 to 10 tk timer bna re hai
 //timer
@@ -37,9 +39,29 @@ for(let i=1;i<=10;i++){
   }, i*1000);
 }
 
-//reverse timer--> yha pe misunderstanding ho skti hai ki 10 se 1 kyu nhi print hua it is normal but 
+//reverse timer--> yha pe misunderstanding ho skti hai ki 10 se 1 kyu nhi print hua it is normal but the output is 1 2 3 4 5 ..10 bcz u have made the condition in timemr is of i*500 which means lets understand this with each call
+
 for(let i=10;i>=1;i--){
   setTimeout(function(){
     console.log(i);
   }, i*500); //time lapse of 5ms
 }
+
+
+//1st call
+setTimeout(function(){
+  console.log(10);
+},10*500)  // time waited== 5sec it will be executed after 5sec
+//2nd call
+setTimeout(function(){
+  console.log(9);
+},9*500) // time waited== 4.5 sec after this it will be executed
+//3rd call
+setTimeout(function(){
+  console.log(8);
+},8*500) // time waited== 4sec 
+//10th call
+setTimeout(function(){
+  console.log(1);
+},1*500) //time waited== 0.5 sec so that's why the first execution will be of 1 then 2 and so on...
+//always remember this point...
