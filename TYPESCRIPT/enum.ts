@@ -23,22 +23,22 @@
 
 //ex
 
-enum UserRole {
-  Admin = "ADMIN",
-  User = "USER"
-}
+// enum UserRole {
+//   Admin = "ADMIN",
+//   User = "USER"
+// }
 
-interface User {
-  name: string;
-  role: UserRole;
-}
+// interface User {
+//   name: string;
+//   role: UserRole;
+// }
 
-const newUser: User = {
-  name: "Prakhar",
-  role: UserRole.Admin
-};
+// const newUser: User = {
+//   name: "Prakhar",
+//   role: UserRole.Admin
+// };
 
-UserRole.User;
+// UserRole.User;
 
 
 
