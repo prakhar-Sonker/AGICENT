@@ -6,12 +6,12 @@ let s4 = document.getElementById("sq4");
 
 //event listners
 //1st event
-//concept here to learn ki jo hm changes kr re hai wo sq1 me hore hai bcz 1 hmara andr hai div k andr pr uske andr ek aur element hai that is h1 tag so keep remember always ki agr element k andr element aajaye tb to usko bhi pass krenge and normal conceot yaaad rkhna string k andr int mt pass krna mtlb jo number tumko change krana hai wo so the process is-->  `<h1>${randomNum}</h1>`  or "<h1>"+randomNum+"</h1>"
+//concept here to learn ki jo hm changes kr re hai wo sq1 me hore hai bcz 1 hmara andr hai div k andr pr uske andr ek aur element hai that is h1 tag so keep remember always ki agr element k andr element aajaye tb to usko bhi pass krenge and normal concept yaaad rkhna string k andr int mt pass krna mtlb jo number tumko change krana hai wo so the process is-->  `<h1>${randomNum}</h1>`  or "<h1>"+randomNum+"</h1>"
 s1.addEventListener("mouseenter", function(){
   let randomNum = Math.floor(Math.random()*100);
   // s1.innerHTML= "<h1>"+Math.floor(Math.random()*100)+"</h1>";
   s1.innerHTML= `<h1> ${randomNum} </h1>`;
-})
+}) 
 
 //2nd event listner
 //1st method
