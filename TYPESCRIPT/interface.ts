@@ -17,9 +17,16 @@ function getDetails(obj : User){
   console.log("Gender:", obj.gender ?? "Not Provided");
 }
 
-getDetails({
-  name: "Prakhar",
-  age: 22,
-  email: "pra@gmail.com",
-  gender: "male"
-});
+// getDetails({
+//   name: "Prakhar",
+//   age: 22,
+//   email: "pra@gmail.com",
+//   gender: "male"
+// });
+
+// 🔎 Explanation
+
+// interface User → blueprint that ensures object has name, age, email, and optionally gender.
+// obj: User → enforces that whatever we pass must follow the User interface.
+// In getDetails, instead of obj.name = obj.name, we use the values.
+// obj.gender ?? "Not Provided" → if gender is not passed, it prints "Not Provided".
