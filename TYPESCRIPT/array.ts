@@ -6,15 +6,15 @@ let numbers: number[] = [1, 2, 3, 4];
 let names: string[] = ["Prakhar", "Ravi", "Amit"];
 
 //array with objects with type
-type Person = {
-  id: number;
-  name: string;
-};
+// type Person = {
+//   id: number;
+//   name: string;
+// };
 
-let users: Person[] = [
-  { id: 1, name: "Prakhar" },
-  { id: 2, name: "Ravi" }
-];
+// let users: Person[] = [
+//   { id: 1, name: "Prakhar" },
+//   { id: 2, name: "Ravi" }
+// ];
 
 //Make an array of products where each product has id: ProductID, name: string, and price: number.
 

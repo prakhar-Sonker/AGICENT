@@ -4,7 +4,7 @@
 // Create an Address type with city, country
 // Make StudentDetails = Student & Address and create an object
 
-type Student = {
+type Students = {
   name: string;
   rollNo: number;
 }
@@ -15,7 +15,7 @@ type Address = {
   zipCode?: number | string;
 }
 
-type StudentDetails = Student & Address;
+type StudentDetails = Students & Address;
 
 function printStudentDetails(details: StudentDetails){
   console.log("Name: ", details.name),

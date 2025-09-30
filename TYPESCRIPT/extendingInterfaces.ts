@@ -9,11 +9,11 @@
 // Flexibility → Can combine multiple interfaces.
 // Cleaner Code → Makes large projects (like Next.js + Prisma) more structured.
 
-interface User{
-  name: string;
-  email: string;
-  password: string;
-}
+// interface User{
+//   name: string;
+//   email: string;
+//   password: string;
+// }
 //YHA pe oops wla logic lg gya
 //user parent ho jyega and admin child admin k pass user kisaari properties hongi and apni bhi khud se kuch hongi
 interface Admin extends User{
@@ -22,12 +22,12 @@ interface Admin extends User{
 
 //agr yha pe obj user pe kiya to user ke hi prop avail kr skte hai pr obj se admin kiya to admin ki saari prop avail krlenege
 
-function getAdmin(obj: Admin){
-  obj.name;
-  obj.email;
-  obj.password;
-  obj.role;
-};
+// function getAdmin(obj: Admin){
+//   obj.name;
+//   obj.email;
+//   obj.password;
+//   obj.role;
+// };
 
 //Multiple extensions example
 // interface Person {

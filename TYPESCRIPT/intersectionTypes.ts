@@ -1,5 +1,5 @@
 //type ka kaam hai type create krna mtlb type ka merger bnana ya union banana ya single type define krna
-//interface ka kaam hai object ka shape crearte krna
+//interface ka kaam hai object ka shape create krna
 
 //Intersection types
 type Person = { name: string; age: number; };

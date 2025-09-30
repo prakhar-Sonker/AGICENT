@@ -3,14 +3,14 @@
 // An interface is like a blueprint that tells what properties and methods an object should have.
 // 👉 It’s similar to type, but mainly used for objects and classes.
 
-interface User{
+interface Users{
   name: string,
   age: number,
   email: string,
   gender?: string; //optional
 }
 
-function getDetails(obj : User){
+function getDetails(obj : Users){
   console.log("Name:", obj.name);
   console.log("Age:", obj.age);
   console.log("Email:", obj.email);
