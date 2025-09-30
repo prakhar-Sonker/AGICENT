@@ -46,3 +46,40 @@ class MetalBottleMaker extends BottleMaker{
 let b1 = new MetalBottleMaker();
 b1.changeName();
 // b1.name="lets change"; //ye output to show krdega pr error bhi show krta rhega bcz it is not possible
+
+
+
+
+//Example
+
+class Student {
+  public name: string;       // public (default)
+  private age: number;       // private
+  protected grade: string;   // protected
+
+  constructor(name: string, age: number, grade: string) {
+    this.name = name;
+    this.age = age;
+    this.grade = grade;
+  }
+
+  showAge() {
+    console.log(`Age: ${this.age}`); // ✅ allowed (inside class)
+  }
+}
+
+class HighSchoolStudent extends Student {
+  showGrade() {
+    console.log(`Grade: ${this.grade}`); // ✅ allowed (protected in child)
+  }
+}
+
+let s1 = new Student("Prakhar", 22, "A");
+console.log(s1.name);   // ✅ public → accessible
+// console.log(s1.age); // ❌ Error (private)
+// console.log(s1.grade); // ❌ Error (protected)
+
+s1.showAge(); // ✅ prints age
+
+let hs = new HighSchoolStudent("Rohit", 18, "B");
+hs.showGrade(); // ✅ allowed

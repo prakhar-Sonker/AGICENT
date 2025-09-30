@@ -9,7 +9,7 @@ let d2 = new Device();
 
 
 //lets write basic syntax to write class without access modifires
-class Persons{
+export default class Persons{
   name: string;
   age:number;
 

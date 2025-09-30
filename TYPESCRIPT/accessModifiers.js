@@ -56,3 +56,32 @@ var MetalBottleMaker = /** @class */ (function (_super) {
 var b1 = new MetalBottleMaker();
 b1.changeName();
 // b1.name="lets change"; //ye output to show krdega pr error bhi show krta rhega bcz it is not possible
+//Example
+var Student = /** @class */ (function () {
+    function Student(name, age, grade) {
+        this.name = name;
+        this.age = age;
+        this.grade = grade;
+    }
+    Student.prototype.showAge = function () {
+        console.log("Age: ".concat(this.age)); // ✅ allowed (inside class)
+    };
+    return Student;
+}());
+var HighSchoolStudent = /** @class */ (function (_super) {
+    __extends(HighSchoolStudent, _super);
+    function HighSchoolStudent() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    HighSchoolStudent.prototype.showGrade = function () {
+        console.log("Grade: ".concat(this.grade)); // ✅ allowed (protected in child)
+    };
+    return HighSchoolStudent;
+}(Student));
+var s1 = new Student("Prakhar", 22, "A");
+console.log(s1.name); // ✅ public → accessible
+// console.log(s1.age); // ❌ Error (private)
+// console.log(s1.grade); // ❌ Error (protected)
+s1.showAge(); // ✅ prints age
+var hs = new HighSchoolStudent("Rohit", 18, "B");
+hs.showGrade(); // ✅ allowed
