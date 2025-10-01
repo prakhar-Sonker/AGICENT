@@ -1,0 +1,33 @@
+body{
+  font-family: sans-serif;
+  margin: 0 50px;
+}
+ .container{
+  display: flex;
+  gap: 50px;
+ }
+ #posts{
+  width: 500px;
+ }
+ /* we will not only do #posts{  css bcz it will make then all post in display flex but we want to make their div not post*/
+ #posts div{
+  display: flex;
+  align-items: center;
+  /* isko use krne se post aur edit aur delete icon k beech me space bdh jyegi */
+  justify-content: space-between; 
+ }
+ /* now we will add space b/w options */
+ .options{
+  display: flex;
+  gap: 25px;
+ }
+
+ /* icon me changes krne k liye i element ko use krnege  */
+ i{
+  cursor: pointer;
+ }
+/* //error k liye  */
+ #msg{
+  color: red;
+ }
+ 

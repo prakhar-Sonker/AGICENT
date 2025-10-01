@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRUD Operartions</title>
+  <link rel="stylesheet" href="style.css">
+  <link
+   rel="stylesheet"
+   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+/>
+</head>
+<body>
+  <h1>Social Media App</h1>
+  <div class="container">
+    <!-- //2 sections left and right -->
+     <!-- left and right are children of container div so if we want to show them in horizontal way so we will use display flex on the parent which is container -->
+    <div class="left">
+      <form id="form">
+        <label for="">Write your post here</label>
+        <br><br>
+        <textarea name="" id="input" cols="30" rows="10"></textarea>
+        <br> <br>
+        <!-- ye div msg ka isliye bnaya hai tki js ka use krke error show kr ske nhi to normal print wo console me hi aayega -->
+        <div id="msg"></div>
+        <button type="submit">Post</button>
+      </form>
+    </div>
+    <div class="right">
+      <h3>Your posts here</h3>
+      <!-- this is the main div where ebery post will be stored means the parent div and all seperate post will have diff divs present -->
+      <div id="posts">
+        <div>
+          <!-- ye saari post ek template ki trh hai same whi concept use kro jo js me use kiya tha h1 wla jb square game bna re the aur uske andr k letter ka font nhi change hora tha tb poora code copy krke alg se likha tha fxn me  -->
+          <p>Post 1 </p>
+            <span class="options">
+              <i onclick="updatePost(this)" class="fas fa-edit"></i>
+              <!-- yha pr bhi delete  krne k liye onclick likh re this keyword k sath to delete a particular entry -->
+              <i onclick="deletePost(this)" id="delete" class="fas fa-trash-alt"></i>
+            </span>
+        </div>
+        <div>
+          <p>Post 2 </p>
+            <span class="options">
+              <i onclick="updatePost(this)" class="fas fa-edit"></i>
+              <i onclick="deletePost(this)" class="fas fa-trash-alt"></i>
+            </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
